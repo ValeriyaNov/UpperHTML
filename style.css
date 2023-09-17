@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  /*block-size: border-box;*/
+  block-size: border-box;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
 }
 
 body {
@@ -10,8 +16,9 @@ body {
 
 .container {
   display: flex;
-  justify-content: space-around;
-  gap: 230;
+  justify-content: space-between;
+  /*gap: 850px;*/
+  /*padding-left: calc(50% - $contentWidth/2);*/
 }
 
 .bc {
@@ -21,20 +28,23 @@ body {
 .left-header {
   display: flex;
   justify-content: start;
+  padding-left: calc(50% - 570px);
 }
 
 .right-header {
   display: flex;
   justify-content: end;
+  padding-right: calc(50% - 570px);
 }
 
 .picture1 {
   margin-top: 18px;
   margin-bottom: 19px;
-  pmargin-left: 231px;
   background: lightgray 0px 0px/100% 100% no-repeat;
   margin-right: 41px;
+  margin-left: 0;
   background-color: #222;
+  padding-left: calc(50% - 570px);
 }
 
 .picture2 {
@@ -59,7 +69,7 @@ body {
 .picture5 {
   margin-top: 27px;
   margin-bottom: 18px;
-  pmargin-right: 41px;
+  padding-left: calc(50% - 570px);
 }
 
 #menu__toggle {

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import 'vars';
+@import 'mixin';
+.centerr {
+    padding-left: calc(50% - $contentWidth/2);
+    padding-right: calc(50% - $contentWidth/2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.background_header_botoom {
+    height: 148px;
+    background-color: #F8F3F4;
+}
+
+.container_vertical {
+    display: flex;
+    align-items: center;
+}
+
+.container_gorisontal {
+    display: flex;
+    justify-content: center;
+}
+
+.background_caruselka_picture {
+    background-color: #F7F7F7;
+    height: 777px;
+}
+
+.caruselka_product_picture {
+    margin-bottom: 48px;
+}
+
+.header_botoom_link1 {
+    @include header_botoom_link();
+}
+
+.line_k {
+    margin-top: 64px;
+}
+
+.header_botoom_link_about {
+    @include header_botoom_link();
+    color: $colorPinkSite;
+    font-weight: 700;
+}
+
+.header_botoom_right {
+    @include header_botoom_link();
+    color: $colorPinkSite;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: calc(50% - $contentWidth/2);
+}
+
+.header_botoom_left {
+    padding-right: calc(50% - $contentWidth/2);
+}
+
+.description_total_title {
+    @include header_botoom_link();
+    color: $colorPinkSite;
+}
+
+.line_small {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.description_title {
+    @include header_botoom_link();
+    color: #4D4D4D;
+    font-size: 18px;
+}
+
+.description_text {
+    @include header_botoom_link();
+    color: #5E5E5E;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    width: 555px;
+}
+
+.price {
+    @include header_botoom_link();
+    color: $colorPinkSite;
+    font-size: 24px;
+}
+
+.line_large {
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.footer__navbar__iconrs {
+    width: 70px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 230px;
+}
+
+.footer__navbar__iconrs a {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.description_menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.description_menu a {
+    outline: none;
+    display: block;
+    transition: .3s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topmenu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.topmenu>li {
+    width: 100%;
+    float: left;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.topmenu>li>a {
+    @include header_botoom_link();
+    text-transform: uppercase;
+    color: #6F6E6E;
+    font-weight: 400;
+    padding: 15px 3px;
+    width: 140px;
+}
+
+.topmenu li a:hover {
+    color: $colorPinkSite;
+}
+
+.submenu-link:after {
+    content: "\f107";
+    font-family: "FontAwesome";
+    color: inherit;
+    margin-left: 10px;
+}
+
+.submenu {
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 200px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .5s ease-in-out;
+}
+
+.submenu a {
+    @include header_botoom_link();
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    color: #6F6E6E;
+    font-weight: 400;
+}
+
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+.topmenu>li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.links {
+    @include header_botoom_link();
+    color: $colorPinkSite;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid $colorPinkSite;
+    padding: 15px 39px 14px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bag {
+    padding-right: 22px;
+    fill: #EF5B70;
+}
+
+.links:hover {
+    background-color: #FF6A6A;
+    border: 1px solid #FF6A6A;
+    color: white;
+}
+
+.description_button {
+    margin-top: 48px;
+    margin-bottom: 65px;
+}
+
+.description {
+    border: 1px solid white;
+    width: 1141px;
+    height: 601px;
+    margin-top: -50px;
+    z-index: 5;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 128px;
+    margin-top: -50px;
+}

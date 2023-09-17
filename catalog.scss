@@ -1,16 +1,15 @@
             @import 'vars';
+            @import 'mixin';
+            @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+            .center {
+                padding-left: calc(50% - $contentWidth/2);
+                padding-right: calc(50% - $contentWidth/2);
+            }
+            
             * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-            }
-            
-            @mixin type_text() {
-                font-family: Lato;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
             }
             
             .droplist {
@@ -54,7 +53,6 @@
                 display: flex;
                 align-items: center;
                 gap: 11px;
-                padding-left: 16px;
                 margin-bottom: 16px;
                 list-style: none;
             }
@@ -136,6 +134,7 @@
                     background: #fff;
                     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
                     padding: 7px 30px 11px 9px;
+                    z-index: 1;
                 }
                 &__check {
                     @include type_text();
