@@ -140,7 +140,7 @@ a {
   height: 32px;
   display: flex;
   justify-content: space-between;
-  margin-right: 230px;
+  margin-right: calc(50% - 570px);
 }
 
 .footer__navbar__iconrs a {
@@ -148,6 +148,10 @@ a {
   font-size: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.footer__navbar p {
+  margin-left: calc(50% - 570px);
 }
 
 .description_menu {

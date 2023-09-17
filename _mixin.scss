@@ -14,3 +14,12 @@
     font-weight: 300;
     line-height: normal;
 }
+
+@mixin fontStyle($color, $size: 14px, $width: 300) {
+    color: $color;
+    font-family: "latoregular", sans-serif;
+    font-size: $size;
+    font-style: normal;
+    font-weight: $width;
+    line-height: normal;
+}

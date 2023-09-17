@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import 'vars';
 @import 'mixin';
-.centerr {
-    padding-left: calc(50% - $contentWidth/2);
-    padding-right: calc(50% - $contentWidth/2);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -107,7 +102,7 @@ a {
     height: 32px;
     display: flex;
     justify-content: space-between;
-    margin-right: 230px;
+    margin-right: calc(50% - $contentWidth/2);
 }
 
 .footer__navbar__iconrs a {
@@ -115,6 +110,10 @@ a {
     font-size: 20px;
     align-items: center;
     justify-content: center;
+}
+
+.footer__navbar p {
+    margin-left: calc(50% - $contentWidth/2);
 }
 
 .description_menu {

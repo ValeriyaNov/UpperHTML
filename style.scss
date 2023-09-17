@@ -503,9 +503,9 @@
     .gridfooter {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 320px;
-        margin-right: 230px;
-        margin-left: 230px;
+        gap: 327px;
+        margin-right: calc(50% - $widthSite / 2);
+        margin-left: calc(50% - $widthSite / 2);
     }
     
     .centerfooter {
@@ -615,7 +615,7 @@
         font-size: 16px;
         line-height: 19px;
         color: #FBFBFB;
-        margin-left: 235px;
+        margin-left: calc(50% - $contentWidth/2);
     }
     
     .footer__navbar__icons {
@@ -623,7 +623,7 @@
         height: 32px;
         display: flex;
         justify-content: space-between;
-        margin-right: 230px;
+        margin-right: calc(50% - $contentWidth/2);
     }
     
     .footer__navbar__icons a {
