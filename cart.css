@@ -74,7 +74,7 @@
   border: 1px solid #a4a4a4;
 }
 .cart__cards-btn:hover {
-  background-color: #f16d7f;
+  background-color: #F16D7F;
   color: #fff;
   transition: 1s;
 }
@@ -146,7 +146,7 @@
 }
 .cart__form-grand-total-value {
   margin-left: 15px;
-  color: #f16d7f;
+  color: #F16D7F;
 }
 .cart__form-info-btn {
   width: 273px;
@@ -157,13 +157,13 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  background-color: #f16d7f;
+  background-color: #F16D7F;
   border: none;
 }
 .cart__form-info-btn:hover {
   background-color: #fff;
-  color: #f16d7f;
-  border: 1px solid #f16d7f;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
   transition: 1s;
 }
 .cart__form-line {
