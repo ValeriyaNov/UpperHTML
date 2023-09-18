@@ -54,11 +54,11 @@ a {
     color: $colorPinkSite;
     font-size: 24px;
     font-weight: 400;
-    padding-left: calc(50% - $contentWidth/2);
+    padding-left: calc(50% - $widthSite / 2);
 }
 
 .header_botoom_left {
-    padding-right: calc(50% - $contentWidth/2);
+    padding-right: calc(50% - $widthSite/2);
 }
 
 .description_total_title {
@@ -102,7 +102,7 @@ a {
     height: 32px;
     display: flex;
     justify-content: space-between;
-    margin-right: calc(50% - $contentWidth/2);
+    margin-right: calc(50% - $widthSite/2);
 }
 
 .footer__navbar__iconrs a {
@@ -113,7 +113,7 @@ a {
 }
 
 .footer__navbar p {
-    margin-left: calc(50% - $contentWidth/2);
+    margin-left: calc(50% - $widthSite/2);
 }
 
 .description_menu {
