@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
+
 .registration {
     padding: 64px calc(50% - $widthSite / 2) 94px;
     display: flex;
@@ -126,5 +130,58 @@
     }
     &__icon {
         margin-right: 23.08px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width: 1139px) {
+    $widthSite: 704px;
+    .hide {
+        display: block;
+    }
+    .registration {
+        padding: 40px calc(50% - ($widthSite) / 2) 94px;
+        gap: 22px;
+        .advertising {
+            &__text {
+                min-width: 354px;
+                @include fontStyle(#000,
+                16px);
+                &_mb22 {
+                    margin-bottom: 32px;
+                }
+                &_mb21 {
+                    margin-bottom: 22px;
+                }
+            }
+            &__icon {
+                margin-right: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width:350px) {
+    $widthSite: 343px;
+    .hide {
+        display: block;
+    }
+    .registration {
+        padding: 40px calc(50% - ($widthSite) / 2) 100px;
+        gap: 40px;
+        flex-direction: column;
+        .advertising {
+            &__text {
+                font-size: 16px;
+                &_mb22 {
+                    margin-bottom: 32px;
+                }
+                &_mb21 {
+                    margin-bottom: 22px;
+                }
+            }
+            &__icon {
+                margin-right: 22px;
+            }
+        }
     }
 }

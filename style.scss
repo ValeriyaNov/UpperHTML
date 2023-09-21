@@ -653,7 +653,7 @@ body {
 }
 
 @media screen and (min-width:767px) and (max-width: 1139px) {
-    $widthSite: 767px;
+    $widthSite: 704px;
     .left-header {
         padding-left: calc(50% - $widthSite/2);
     }
@@ -768,17 +768,18 @@ body {
 }
 
 @media screen and (max-width: 767px) and (min-width:320px) {
-    $widthSite: 320px;
+    $widthSite: 343px;
     .left-header {
-        padding-left: 16px;
+        padding-left: calc(50% - $widthSite/2);
     }
     .right-header {
-        padding-right: 16px;
+        padding-right: calc(50% - $widthSite/2);
     }
     .picture3 {
         margin-top: 25px;
         margin-bottom: 26px;
         margin-right: 0;
+        padding-right: 0;
     }
     .picture-right-main {
         margin-left: 56px;
@@ -903,7 +904,6 @@ body {
         gap: 7px;
     }
     .footer__navbar {
-        /*width: 375px;*/
         height: 143px;
         flex-direction: column-reverse;
         margin-top: 0;
