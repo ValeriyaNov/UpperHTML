@@ -39,6 +39,12 @@ a {
   justify-content: center;
 }
 
+.container_inet {
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+}
+
 .background_caruselka_picture {
   background-color: #F7F7F7;
   height: 777px;
@@ -326,8 +332,8 @@ ul {
     margin-top: 32px;
   }
   .caruselka_product_picture {
-    width: 374px;
-    height: 454px;
+    width: 340px;
+    height: 412px;
   }
   .description {
     border: none;
